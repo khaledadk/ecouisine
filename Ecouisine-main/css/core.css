@@ -1,0 +1,229 @@
+/*
+=============== 
+Import Fonts
+===============
+ */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Jost:wght@300;700&dusplay=swap');
+
+
+
+/*
+=============== 
+Navbar
+===============
+ */
+
+nav {
+  background-color: #140152;
+  top: 0;
+  width: 100%;
+  padding-left: 16px;
+}
+
+nav img { /* Logo Image */
+  height: 4vw;
+  min-height: 40px;
+  width: auto;
+}
+
+.nav-links a {
+  font-size: 1.25rem;
+  padding-top: 16px;
+  padding-right: 12px;
+  color: #CCC;
+}
+
+nav a:hover { color: #666 !important; }
+
+/*.current-nav, .current-nav:hover {
+  color: #e3c61e !important;
+}*/
+
+nav ul {
+  margin: 0 !important;
+}
+
+/*
+=============== 
+Core CSS
+===============
+ */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-padding, 150px);
+}
+
+main {
+  margin: 0;
+  background: #f6fdff;
+}
+
+main {
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 64px;
+}
+
+h1, h2, h3 {
+  display: inline;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+main p {
+  font-size: 20px;
+}
+
+svg { /* Icons */
+  width: 32px;
+  height: 32px;
+}
+
+/*
+=============== 
+Recipes Page
+===============
+ */
+.menu-plan {
+  background: #fbe2ac;
+}
+
+.ingredient-measure {
+  color: #896400;
+  font-size: 14px;
+  padding: 2px;
+  font-style: italic;
+}
+
+.grocery-list h4 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.grocery-list ul {
+  padding: 0;
+}
+
+.grocery-list li {
+  font-weight: 300;
+  margin: 0;
+  padding-left: 1em;
+  margin-left: 0.3em;
+  list-style: none;
+  background-image: url('../images/right-chevron.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 10px;
+}
+
+/*
+=============== 
+About Page
+===============
+ */
+
+.about-section {
+  font-size: 32px;
+}
+
+.group-info h2, .group-info h3 {
+  display: block;
+}
+
+.group-info img {
+  width: 18em;
+  height: auto;
+  border-radius: 50%;
+}
+
+/*
+=============== 
+Contacts Page
+===============
+ */
+
+.contacts-section .u-text {  
+  word-wrap: normal;
+}
+
+a {
+  outline: none !important;
+}
+
+@media (max-width: 767px) {
+  .u-left-cell {
+    order: 999;
+  }
+}
+
+/*
+=============== 
+Footer
+===============
+ */
+
+footer > div > div{
+  padding: 0 5em;
+}
+
+footer {
+  background: #292929;
+}
+footer h5 {
+  letter-spacing: 2px;
+  color: #E2FAFF;
+  font-family: 'Bodoni Moda', serif;
+  text-transform: lowercase;
+}
+
+footer {
+  color: #fff;
+  font-weight: 300;
+}
+
+footer a {
+  font-size: 13px;
+  font-family: 'Jost', sans-serif;
+  color: #CCC;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer a:hover {
+  color: #CCC;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  footer > div > div{
+    padding: 0;
+  }
+}
+
+.footer-bottom {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*
+=============== 
+Button to Top
+===============
+ */
+
+#btn-back-to-top {
+  z-index: 999;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,60,0.2);  
+}
+
+#btn-back-to-top img {
+  width: 1.5em;
+}
+
